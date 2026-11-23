@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TRISHUL | Connect Smarter</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img
+      src="https://raw.githubusercontent.com/aryanchougule4941-wq/trisul-tata-nexon/main/Trishul%20Logo%20(2).png"
+      alt="TRISUL Logo"
+    >
+
+    <h1>WELCOME TO TRISHUL</h1>
+    <p>Connect Smarter. Experience Better.</p>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h2>Discover a Smarter Digital Experience</h2>
+
+      <p>
+        Introducing a smarter way to connect,
+        explore and experience brands.
+      </p>
+
+      <a href="#about" class="button">Discover TRISHUL</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About TRISHUL</h2>
+
+      <p>
+        At TRISHUL, we transform traditional introductions
+        into smart digital experiences.
+      </p>
+    </section>
+
+    <!-- VISION -->
+    <section>
+      <h2>Our Vision</h2>
+
+      <p>
+        Making information accessible through
+        smart digital technology.
+      </p>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="products">
+
+      <h2>OUR PRODUCTS</h2>
+
+      <p class="products-intro">
+        Choose the TRISHUL experience that suits your needs.
+      </p>
+
+      <!-- FOUR INDIVIDUAL PRODUCTS -->
+      <div class="product-container">
+
+        <!-- PRODUCT 1 -->
+        <div class="product-card">
+
+          <div class="product-number">01</div>
+
+          <h3>TRISHUL Basic</h3>
+
+          <p class="product-type">QR Code Card</p>
+
+          <div class="product-price">₹600</div>
+
+          <ul>
+            <li>Physical TRISHUL Card</li>
+            <li>QR Code</li>
+            <li class="not-included">
+              <span class="wrong">✕</span> NFC Technology
+            </li>
+            <li class="not-included">
+              <span class="wrong">✕</span> Personal Website
+            </li>
+          </ul>
+
+          <button
+            type="button"
+            class="product-button"
+            onclick="selectProduct('TRISUL Basic - ₹600')">
+            Choose This
+          </button>
+
+        </div>
+
+        <!-- PRODUCT 2 -->
+        <div class="product-card">
+
+          <div class="product-number">02</div>
+
+          <h3>TRISHUL Standard</h3>
+
+          <p class="product-type">NFC Card</p>
+
+          <div class="product-price">₹800</div>
+
+          <ul>
+            <li>Physical TRISHUL Card</li>
+            <li>NFC Technology</li>
+            <li class="not-included">
+              <span class="wrong">✕</span> QR Code
+            </li>
+            <li class="not-included">
+              <span class="wrong">✕</span> Personal Website
+            </li>
+          </ul>
+
+          <button
+            type="button"
+            class="product-button"
+            onclick="selectProduct('TRISUL Standard - ₹800')">
+            Choose This
+          </button>
+
+        </div>
+
+        <!-- PRODUCT 3 -->
+        <div class="product-card">
+
+          <div class="product-number">03</div>
+
+          <h3>TRISHUL Deluxe</h3>
+
+          <p class="product-type">QR + NFC Card</p>
+
+          <div class="product-price">₹1,200</div>
+
+          <ul>
+            <li>Physical TRISHUL Card</li>
+            <li>QR Code</li>
+            <li>NFC Technology</li>
+            <li class="not-included">
+              <span class="wrong">✕</span> Personal Website
+            </li>
+          </ul>
+
+          <button
+            type="button"
+            class="product-button"
+            onclick="selectProduct('TRISUL Deluxe - ₹1,200')">
+            Choose This
+          </button>
+
+        </div>
+
+        <!-- PRODUCT 4 -->
+        <div class="product-card featured">
+
+          <div class="product-number">04</div>
+
+          <h3>TRISHUL Premium</h3>
+
+          <p class="product-type">Complete Digital Experience</p>
+
+          <div class="product-price">₹2,000</div>
+
+          <ul>
+            <li>Physical TRISHUL Card</li>
+            <li>QR Code</li>
+            <li>NFC Technology</li>
+            <li>Personal Website</li>
+          </ul>
+
+          <button
+            type="button"
+            class="product-button"
+            onclick="selectProduct('TRISUL Premium - ₹2,000')">
+            Choose This
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- PRODUCT 5: CORPORATE BULK ORDERS -->
+      <div class="product-card bulk-card">
+
+        <div class="product-number">05</div>
+
+        <h3>TRISHUL Corporate</h3>
+
+        <p class="product-type">
+          Bulk Orders & Business Solutions
+        </p>
+
+        <p class="bulk-description">
+          Choose your card specifications and quantity.
+          Get a customised quotation from TRISHUL.
+        </p>
+
+        <form id="bulk-order-form">
+          
+<label for="bulk-customer-name">
+  Customer Name
+</label>
+
+<input
+  type="text"
+  id="bulk-customer-name"
+  placeholder="Enter your name"
+  required
+>
+
+
+          <!-- CARD TYPE -->
+          <label for="bulk-card-type">
+            Select Card Type
+          </label>
+
+          <select id="bulk-card-type" required>
+
+            <option value="">
+              Choose your card type
+            </option>
+
+            <option value="QR Code Card">
+             Basic Card
+            </option>
+
+            <option value="NFC Card">
+              Standard Card
+            </option>
+
+            <option value="QR + NFC Card">
+              Dluxe Card
+            </option>
+
+            <option value="Premium Card with Personal Website">
+              Premium Card 
+            </option>
+
+          </select>
+
+          <!-- QUANTITY -->
+          <label for="bulk-quantity">
+            Select Quantity
+          </label>
+
+          <select id="bulk-quantity" required>
+
+            <option value="">
+              Choose quantity
+            </option>
+
+            <option value="10 Cards">
+              10 Cards
+            </option>
+
+            <option value="25 Cards">
+              25 Cards
+            </option>
+
+            <option value="50 Cards">
+              50 Cards
+            </option>
+
+            <option value="100 Cards">
+              100 Cards
+            </option>
+
+            <option value="200+ Cards">
+              200+ Cards
+            </option>
+
+          </select>
+
+          <!-- ADDITIONAL REQUIREMENTS -->
+          <label for="bulk-requirements">
+            Additional Requirements (Optional)
+          </label>
+
+          <textarea
+            id="bulk-requirements"
+            rows="4"
+            placeholder="Company name, logo, custom design, colours or other requirements..."
+          ></textarea>
+
+          <!-- PRICE -->
+          <div class="bulk-price">
+            PRICE ON ENQUIRY
+          </div>
+
+          <!-- SUBMIT -->
+          <button
+            type="submit"
+            class="product-button">
+            Request Bulk Quotation
+          </button>
+
+        </form>
+
+      </div>
+
+      <!-- SELECTION MESSAGE -->
+      <div id="selection-message" class="selection-message">
+        Select a product to get started.
+      </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+
+      <h2>Contact TRISHUL</h2>
+
+      <p>
+        Have an idea, business enquiry or collaboration opportunity?
+        We'd love to hear from you.
+      </p>
+
+      <div class="contact-details">
+
+        <!-- EMAIL -->
+        <div class="contact-card">
+
+          <h3>Email Us</h3>
+
+          <p>Connect with us for business enquiries.</p>
+
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=trishuldigital15@gmail.com"
+            class="contact-link"
+            target="_blank"
+            rel="noopener noreferrer">
+            Send an Email
+          </a>
+
+        </div>
+
+        <!-- WHATSAPP -->
+        <div class="contact-card">
+
+          <h3>WhatsApp</h3>
+
+          <p>Contact us directly for quick communication.</p>
+
+          <a
+            href="https://wa.me/918669554941"
+            class="contact-link"
+            target="_blank"
+            rel="noopener noreferrer">
+            Chat on WhatsApp
+          </a>
+
+        </div>
+
+        <!-- INSTAGRAM -->
+        <div class="contact-card">
+
+          <h3>Instagram</h3>
+
+          <p>Follow TRISHUL for updates and digital experiences.</p>
+
+          <a
+            href="https://www.instagram.com/trishul_digital_/"
+            class="contact-link"
+            target="_blank"
+            rel="noopener noreferrer">
+            Follow on Instagram
+          </a>
+
+        </div>
+
+      </div>
+
+      <p class="contact-note">
+        TRISHUL — Connect Smarter. Experience Better.
+      </p>
+
+      <p class="contact-note">
+        Contact Number: +91 8669554941
+      </p>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 TRISHUL. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="./script.js"></script>
+
+</body>
+</html>
